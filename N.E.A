@@ -1,1 +1,419 @@
 #profile-title:N.E.A👻
+{
+  "dns": {
+    "queryStrategy": "UseIPv4",
+    "servers": [
+      "https+local://1.1.1.1/dns-query",
+      "https+local://8.8.8.8/dns-query",
+      "77.88.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "udp": true
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "tag": "http"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "s1",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.83.255",
+            "port": 443,
+            "users": [
+              {
+                "id": "b4f272ea-cd4f-4df9-9929-1c6b49c0b6ac",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "a76ea384b29a4f79",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.188.115.178",
+            "port": 443,
+            "users": [
+              {
+                "id": "b4f272ea-cd4f-4df9-9929-1c6b49c0b6ac",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "3f200574d011010f",
+          "spiderX": "",
+          "serverName": "rutube.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.65.209",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "e55fd8f9c9a9a0ca",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s4",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.83.255",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "048fe5c8be4bb687",
+          "spiderX": "",
+          "serverName": "api-maps.yandex.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.83.255",
+            "port": 443,
+            "users": [
+              {
+                "id": "b4f272ea-cd4f-4df9-9929-1c6b49c0b6ac",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "048fe5c8be4bb687",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.83.255",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "a76ea384b29a4f79",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s7",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.65.209",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "2476f063981ffd92",
+          "spiderX": "",
+          "serverName": "api-maps.yandex.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s8",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.65.209",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "4a3ad88ff867a295",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s9",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "5.188.115.178",
+            "port": 443,
+            "users": [
+              {
+                "id": "b4f272ea-cd4f-4df9-9929-1c6b49c0b6ac",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "6354585c37827955",
+          "spiderX": "",
+          "serverName": "rutube.ru",
+          "fingerprint": "qq",
+          "show": false
+        }
+      }
+    },
+    {
+      "tag": "s10",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "51.250.65.209",
+            "port": 443,
+            "users": [
+              {
+                "id": "53b2c46d-bc0a-4696-9d87-6bfa77a60d1f",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "shortId": "048fe5c8be4bb687",
+          "spiderX": "",
+          "serverName": "ads.x5.ru",
+          "fingerprint": "chrome",
+          "show": false
+        }
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "remarks": "🇸🇪 LTE #5 | @restlyconnect",
+  "burstObservatory": {
+    "pingConfig": {
+      "destination": "https://www.google.com/generate_204",
+      "interval": "8s",
+      "sampling": 2,
+      "timeout": "3s"
+    },
+    "subjectSelector": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s5",
+      "s6",
+      "s7",
+      "s8",
+      "s9",
+      "s10"
+    ]
+  },
+  "routing": {
+    "balancers": [
+      {
+        "fallbackTag": "s1",
+        "selector": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s8",
+          "s9",
+          "s10"
+        ],
+        "strategy": {
+          "settings": {
+            "baselines": [
+              "2s"
+            ],
+            "expected": 1,
+            "maxRTT": "3s",
+            "tolerance": 0
+          },
+          "type": "leastLoad"
+        },
+        "tag": "auto_bal"
+      }
+    ],
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "outboundTag": "block",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      },
+      {
+        "balancerTag": "auto_bal",
+        "inboundTag": [
+          "socks",
+          "http"
+        ],
+        "network": "tcp,udp",
+        "type": "field"
+      }
+    ]
+  }
+}

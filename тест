@@ -689,3 +689,774 @@
     ]
   }
 }
+
+
+{
+
+  "dns": {
+
+    "port": 53,
+
+    "servers": [
+
+      "1.1.1.1",
+
+      "8.8.8.8",
+
+      {
+
+        "address": "77.88.8.8",
+
+        "domains": [
+
+          "geosite:category-ru"
+
+        ]
+
+      }
+
+    ],
+
+    "queryStrategy": "UseIPv4"
+
+  },
+
+  "inbounds": [
+
+    {
+
+      "tag": "socks",
+
+      "port": 10808,
+
+      "listen": "127.0.0.1",
+
+      "protocol": "socks",
+
+      "settings": {
+
+        "udp": true,
+
+        "auth": "noauth"
+
+      },
+
+      "sniffing": {
+
+        "enabled": true,
+
+        "routeOnly": false,
+
+        "destOverride": [
+
+          "http",
+
+          "tls",
+
+          "quic"
+
+        ]
+
+      }
+
+    },
+
+    {
+
+      "tag": "http",
+
+      "port": 10809,
+
+      "listen": "127.0.0.1",
+
+      "protocol": "http",
+
+      "settings": {
+
+        "allowTransparent": false
+
+      },
+
+      "sniffing": {
+
+        "enabled": true,
+
+        "routeOnly": false,
+
+        "destOverride": [
+
+          "http",
+
+          "tls",
+
+          "quic"
+
+        ]
+
+      }
+
+    }
+
+  ],
+
+  "outbounds": [
+
+    {
+
+      "tag": "grp-1-j2oer2oli29",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "103.54.18.233",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+
+                "flow": "",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "ws",
+
+        "wsSettings": {
+
+          "path": "/?ed=2560&Telegram🇨🇳 @WangCai2"
+
+        },
+
+        "security": "tls",
+
+        "tlsSettings": {
+
+          "serverName": "sni.111000.indevs.in",
+
+          "fingerprint": "chrome"
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-2-hbzzskokpnx",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "195.133.75.35",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+
+                "flow": "",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "ws",
+
+        "wsSettings": {
+
+          "path": "/?ed=2560&Telegram🇨🇳@WangCai2"
+
+        },
+
+        "security": "tls",
+
+        "tlsSettings": {
+
+          "serverName": "sni.111000.indevs.in",
+
+          "fingerprint": "chrome"
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-3-jm7qquk3uzv",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "62.106.66.56",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "85296b8a-0ff8-4057-92ae-fe8fcedc662c",
+
+                "flow": "xtls-rprx-vision",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "tcp",
+
+        "security": "reality",
+
+        "realitySettings": {
+
+          "publicKey": "ZqNF3CGI5QqAm5huC9sByjwxYd-6l5Pxc9-njmqqdl0",
+
+          "shortId": "d4d39c5f8688dfe2",
+
+          "spiderX": "",
+
+          "serverName": "max.ru",
+
+          "fingerprint": "qq",
+
+          "show": false
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-4-xists2f9lz8",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "5.39.217.217",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+
+                "flow": "",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "ws",
+
+        "wsSettings": {
+
+          "path": "/"
+
+        },
+
+        "security": "tls",
+
+        "tlsSettings": {
+
+          "serverName": "sni.111000.indevs.in",
+
+          "fingerprint": "chrome"
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-5-ldprxmnni03",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "144.31.24.84",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4",
+
+                "flow": "xtls-rprx-vision",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "tcp",
+
+        "security": "reality",
+
+        "realitySettings": {
+
+          "publicKey": "P-3bYKbPp5YeCefayC3S3PvLanBv_lp0p_5qfrjbM34",
+
+          "shortId": "39a1eb3ec417cd66",
+
+          "spiderX": "",
+
+          "serverName": "st.okcdn.ru",
+
+          "fingerprint": "qq",
+
+          "show": false
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-6-fer93o44j5k",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "62.106.66.56",
+
+            "port": 443,
+
+            "users": [
+
+              {
+
+                "id": "d727e221-8ff1-4661-86e5-6d0cbbad2145",
+
+                "flow": "xtls-rprx-vision",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "tcp",
+
+        "security": "reality",
+
+        "realitySettings": {
+
+          "publicKey": "ZqNF3CGI5QqAm5huC9sByjwxYd-6l5Pxc9-njmqqdl0",
+
+          "shortId": "d4d39c5f8688dfe2",
+
+          "spiderX": "",
+
+          "serverName": "max.ru",
+
+          "fingerprint": "qq",
+
+          "show": false
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "grp-7-xkv9rs0ltlw",
+
+      "protocol": "vless",
+
+      "settings": {
+
+        "vnext": [
+
+          {
+
+            "address": "185.243.112.61",
+
+            "port": 2053,
+
+            "users": [
+
+              {
+
+                "id": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+
+                "flow": "",
+
+                "encryption": "none"
+
+              }
+
+            ]
+
+          }
+
+        ]
+
+      },
+
+      "streamSettings": {
+
+        "network": "ws",
+
+        "wsSettings": {
+
+          "path": "/?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2="
+
+        },
+
+        "security": "tls",
+
+        "tlsSettings": {
+
+          "serverName": "sni.111000.v6.navy",
+
+          "fingerprint": "chrome"
+
+        }
+
+      }
+
+    },
+
+    {
+
+      "tag": "direct",
+
+      "protocol": "freedom"
+
+    },
+
+    {
+
+      "tag": "block",
+
+      "protocol": "blackhole"
+
+    }
+
+  ],
+
+  "remarks": "Netherlands 🇳🇱 | Авто",
+
+  "burstObservatory": {
+
+    "subjectSelector": [
+
+      "grp-1-j2oer2oli29",
+
+      "grp-2-hbzzskokpnx",
+
+      "grp-3-jm7qquk3uzv",
+
+      "grp-4-xists2f9lz8",
+
+      "grp-5-ldprxmnni03",
+
+      "grp-6-fer93o44j5k",
+
+      "grp-7-xkv9rs0ltlw"
+
+    ],
+
+    "pingConfig": {
+
+      "destination": "http://www.gstatic.com/generate_204",
+
+      "interval": "15s",
+
+      "timeout": "5s",
+
+      "sampling": 4
+
+    }
+
+  },
+
+  "routing": {
+
+    "domainMatcher": "hybrid",
+
+    "domainStrategy": "IPIfNonMatch",
+
+    "balancers": [
+
+      {
+
+        "tag": "bal_country",
+
+        "selector": [
+
+          "grp-1-j2oer2oli29",
+
+          "grp-2-hbzzskokpnx",
+
+          "grp-3-jm7qquk3uzv",
+
+          "grp-4-xists2f9lz8",
+
+          "grp-5-ldprxmnni03",
+
+          "grp-6-fer93o44j5k"
+
+        ],
+
+        "strategy": {
+
+          "type": "leastLoad",
+
+          "settings": {
+
+            "baselines": [
+
+              "4s"
+
+            ],
+
+            "costs": [
+
+              {
+
+                "match": "grp-1-j2oer2oli29",
+
+                "regexp": false,
+
+                "value": 0
+
+              },
+
+              {
+
+                "match": "grp-2-hbzzskokpnx",
+
+                "regexp": false,
+
+                "value": 100000000
+
+              },
+
+              {
+
+                "match": "grp-3-jm7qquk3uzv",
+
+                "regexp": false,
+
+                "value": 200000000
+
+              },
+
+              {
+
+                "match": "grp-4-xists2f9lz8",
+
+                "regexp": false,
+
+                "value": 300000000
+
+              },
+
+              {
+
+                "match": "grp-5-ldprxmnni03",
+
+                "regexp": false,
+
+                "value": 400000000
+
+              },
+
+              {
+
+                "match": "grp-6-fer93o44j5k",
+
+                "regexp": false,
+
+                "value": 500000000
+
+              },
+
+              {
+
+                "match": "grp-7-xkv9rs0ltlw",
+
+                "regexp": false,
+
+                "value": 600000000
+
+              }
+
+            ],
+
+            "expected": 1,
+
+            "maxRTT": "6s"
+
+          }
+
+        },
+
+        "fallbackTag": "grp-7-xkv9rs0ltlw"
+
+      }
+
+    ],
+
+    "rules": [
+
+      {
+
+        "type": "field",
+
+        "protocol": [
+
+          "bittorrent"
+
+        ],
+
+        "outboundTag": "block"
+
+      },
+
+      {
+
+        "ip": [
+
+          "77.88.8.8"
+
+        ],
+
+        "outboundTag": "direct"
+
+      },
+
+      {
+
+        "type": "field",
+
+        "inboundTag": [
+
+          "socks",
+
+          "http"
+
+        ],
+
+        "network": "tcp,udp",
+
+        "balancerTag": "bal_country"
+
+      }
+
+    ]
+
+  }
+
+}
